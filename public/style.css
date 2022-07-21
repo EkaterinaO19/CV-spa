@@ -1,0 +1,324 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    width: 100%;
+    position: relative;
+    background: #1d1d1d;
+    color: white;
+    font-family: 'Roboto Slab', serif;
+}
+
+/* navbar */
+
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 60px;
+    background: #1d1d1d;
+    padding: 0 3rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 8;
+} 
+
+.brand {
+    text-transform: capitalize;
+    font-weight: 500;
+    color: white;
+}
+
+.links-container {
+    display: flex;
+    list-style: none;
+}
+
+.link {
+    text-decoration: none;
+    color: white;
+    margin: 0 10px;
+    padding: 10px;
+    position: relative;
+}
+
+.link:hover:not(.active) {
+    opacity: 0.7;
+}
+
+.links.active::before 
+.separator::before
+{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background: white;
+}
+
+.link.active::after 
+.separator::after
+{
+    content: "";
+    position: absolute;
+    bottom: 2px;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background: white;
+}
+
+/* home section */
+
+.home {
+    width: 100%;
+    min-height: calc(100vh-60px);
+    height: auto;
+    margin-top: 60px;
+    padding: 0 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+}
+
+.image {
+    height: 35%;
+    width: 35%;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+
+.hero-content {
+    width: 50%;
+}
+
+.hero-heading {
+    font-size: 5rem;
+    font-weight: 500;
+}
+
+.highlight {
+    color: #ff3559;
+}
+
+.profession {
+    width: fit-content;
+    display: block;
+    margin: 20px 0 20px;
+    margin-left: auto;
+    font-size: 30px;
+    color: #ff3559;
+    position: relative;
+}
+
+.info {
+    line-height: 30px;
+    margin-bottom: 2rem;
+}
+
+.btn {
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 50px;
+    background:  #ff3559;
+    color: white;
+    text-transform: capitalize;
+}
+
+/* Обо мне */
+
+.about {
+    width: 100%;
+    height: 100%;
+    padding: 7rem 7rem;
+}
+
+.heading {
+    padding-top: 2rem;
+    text-align: center;
+    font-weight: 500;
+    font-size: 3rem;    
+    text-transform: capitalize;
+}
+
+.sub-heading {
+    text-align: center;
+    font-size: 1rem;
+    margin: 10px;
+    opacity: 0.7;
+}
+
+.separator {
+    width: 25%;
+    height: 25%;
+    position: relative;
+}
+
+.about-me-container {
+    margin: 150px 0 100px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 40% 60%;
+    grid-gap: 50px;
+}
+
+.about-image {
+    height: 100%;
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.25);
+}
+
+.left-col, .right-col {
+    position: relative;
+}
+
+.left-col::before {
+    content: 'да, это я;)';
+    text-transform: capitalize;
+    position: absolute;
+    right: 0;
+    top: -3rem;
+    color: #ff3559;
+}
+
+.about-text {
+    font-size: 1.2rem;
+    font-weight: 300;
+    line-height: 35px;
+    margin-bottom: 40px;
+}
+
+.skill-container {
+    position: relative;
+    margin-top: 100px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 20px;
+}
+
+.skill-card {
+    height: 200px;
+    border-radius: 10px;
+    border: 1px solid #464646;
+    text-align: center;
+    position: relative;
+    cursor: pointer;
+    transition: .5s;
+} 
+
+.skill {
+    font-size: 2rem;
+    color: #464646;
+    line-height: 200px;
+}
+
+.skill-card:hover {
+    background: var(--bg);
+}
+
+.skill-card:hover .skill{
+    color: white;
+}
+
+.skill-card.large {
+    grid-column: 2 span;
+}
+
+/* project section */
+
+.project {
+    position: relative;
+    padding: 50px 10vw;
+}
+
+.filter{
+    width: fit-content;
+    display: block;
+    margin: 100px auto;
+}
+
+.filter-btn {
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    text-transform: capitalize;
+    margin: 0 5px 10px;
+    cursor: pointer;
+}
+
+.filter-btn.active {
+    background: #ff3559;
+    color: #fff;
+}
+
+.project-container {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 20px;
+}
+
+.project-card {
+    position: relative;
+    cursor: pointer;
+    display: block;
+}
+
+.project-card {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.project-card .content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: .5s;
+    text-transform: capitalize;
+}
+
+.project-name {
+    font-weight: 300;
+    font-size: 2.5rem;
+    text-align: center;
+}
+
+.project-card:hover .content{
+    opacity: 1;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

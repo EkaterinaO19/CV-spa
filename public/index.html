@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Портфолио</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;400;700&display=swap" rel="stylesheet">
+ </head>
+ <body>
+
+    <!-- navbar -->
+<nav class="navbar">
+    <h1 class="brand">FOLIO</h1>
+    <ul class="links-container">
+        <li class="links-item"><a href="#" class="link">Главная</a></li>
+        <li class="links-item"><a href="#project-section" class="link">Проекты</a></li>
+        <li class="links-item"><a href="#about-section" class="link">Обо мне</a></li>
+        <li class="links-item"><a href="#" class="link">Контакты</a></li>
+    </ul>
+</nav>
+
+<!-- Главная -->
+<section class="home">
+    <div class="hero-content">
+        <h1 class="hero-heading"><span class="highlight">Привет, </span>меня зовут Иван</h1>
+    <p class="profession">Веб-разработчик</p>
+    <p class="info">Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+        Eveniet obcaecati numquam, quaerat officia praesentium labore suscipit a,
+        unde quam temporibus minima eaque maiores architecto libero. 
+        Qui facere temporibus molestiae illo?
+    </p>
+    <a href="#contact-section" class="btn">Контакты</a>
+    </div>
+    <img src="./img/avatar.jpg" class="image" alt="">
+</section>
+
+<!-- Обо мне -->
+
+<section class="about" id="about-section">
+    <h2 class="heading">Обо <span class="highlight">мне</span></h2>
+    <p class="sub-heading">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+    <div class="separator"></div>
+
+    <div class="about-me-container">
+        <div class="left-col">
+            <img src="./img/avatar2.jpg" class="about-image" alt="">
+        </div>
+        <div class="right-col">
+            <p class="about-text">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+                Architecto non ut vero natus, eligendi et. Libero aliquid 
+                asperiores repudiandae obcaecati iusto quisquam voluptate corporis,
+                dignissimos fugit. Similique facilis commodi quibusdam.Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+                Architecto non ut vero natus, eligendi et. Libero aliquid 
+                asperiores repudiandae obcaecati iusto quisquam voluptate corporis,
+                dignissimos fugit. Similique facilis commodi quibusdam.
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+                Architecto non ut vero natus, eligendi et. Libero aliquid 
+                asperiores repudiandae obcaecati iusto quisquam voluptate corporis,
+                dignissimos fugit. Similique facilis commodi quibusdam.Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+                Architecto non ut vero natus, eligendi et. Libero aliquid 
+                asperiores repudiandae obcaecati iusto quisquam voluptate corporis,
+                dignissimos fugit. Similique facilis commodi quibusdam.
+            </p>
+            <a href="#" class="btn">Скачать Резюме</a>
+        </div>
+    </div>
+
+    <h2 class="heading"><span class="highlight">Языки </span> программирования и <span class="highlight">технологии </span>, которые я использую</h2>
+    <div class="separator"></div>
+    <div class="skill-container">
+        <div class="skill-card" style="--bg: #ff3559">
+        <p class="skill">HTML</p>
+        </div>
+        <div class="skill-card" style="--bg: #ff3559">
+            <p class="skill">CSS</p>
+            </div>
+        <div class="skill-card" style="--bg: #ff3559">
+        <p class="skill">SCSS</p>
+        </div>
+        <div class="skill-card" style="--bg: #ff3559">
+            <p class="skill">JavaScript</p>
+        </div>
+        <div class="skill-card large" style="--bg: #ff3559">
+            <p class="skill">React JS</p>
+        </div>
+        <div class="skill-card large" style="--bg: #ff3559">
+            <p class="skill">Node JS</p>
+        </div>
+        <div class="skill-card" style="--bg: #ff3559">
+            <p class="skill">Postgres SQL</p>
+        </div>
+        <div class="skill-card" style="--bg: #ff3559">
+            <p class="skill">Mogo DB</p>
+        </div>
+        <div class="skill-card large" style="--bg: #ff3559">
+            <p class="skill">И еще много всего</p>
+        </div>
+    </div>
+</section>
+
+<!-- projects -->
+
+<section class="project" id="project-section">
+    <h2 class="heading">Про<span class="highlight">екты</span></h2>
+    <p class="sub-heading">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+    <div class="separator"></div>
+        <div class="filter">
+            <button class="filter-btn active" id="all">все</button>
+            <button class="filter-btn " id="javascript">javascript</button>
+            <button class="filter-btn " id="ui">ui</button>
+            <button class="filter-btn " id="backend">backend</button>
+            <button class="filter-btn " id="fullstack">fullstack</button>
+        </div>
+
+    <div class="project-container">
+        <!-- <div class="project-card">
+            <img src="./img/project-card.png" alt="">
+            <div class="content">
+                <h1 class="project-name">Проект 1</h1>
+                <span class="tags"></span>
+            </div>
+        </div> -->
+    </div>
+
+
+
+</section>
+
+  <script src="app.js"></script>
+  <script src="project.js"></script>
+ </body>
+</html>
