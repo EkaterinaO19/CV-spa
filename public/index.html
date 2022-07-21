@@ -14,9 +14,9 @@
     <h1 class="brand">FOLIO</h1>
     <ul class="links-container">
         <li class="links-item"><a href="#" class="link">Главная</a></li>
-        <li class="links-item"><a href="#project-section" class="link">Проекты</a></li>
         <li class="links-item"><a href="#about-section" class="link">Обо мне</a></li>
-        <li class="links-item"><a href="#" class="link">Контакты</a></li>
+        <li class="links-item"><a href="#project-section" class="link">Проекты</a></li>
+        <li class="links-item"><a href="#contact-section" class="link">Контакты</a></li>
     </ul>
 </nav>
 
@@ -77,7 +77,7 @@
             <p class="skill">CSS</p>
             </div>
         <div class="skill-card" style="--bg: #ff3559">
-        <p class="skill">SCSS</p>
+            <p class="skill">SCSS</p>
         </div>
         <div class="skill-card" style="--bg: #ff3559">
             <p class="skill">JavaScript</p>
@@ -115,18 +115,54 @@
         </div>
 
     <div class="project-container">
-        <!-- <div class="project-card">
+        <div class="project-card">
             <img src="./img/project-card.png" alt="">
             <div class="content">
-                <h1 class="project-name">Проект 1</h1>
+                <h1 class="project-name hide">Проект </h1>
                 <span class="tags"></span>
             </div>
-        </div> -->
+        </div>
+        <div class="project-card">
+            <img src="./img/project-card.png" alt="">
+            <div class="content">
+                <h1 class="project-name hide">Проект </h1>
+                <span class="tags"></span>
+            </div>
+        </div>
+        <div class="project-card">
+            <img src="./img/project-card.png" alt="">
+            <div class="content">
+                <h1 class="project-name hide">Проект </h1>
+                <span class="tags"></span>
+            </div>
+        </div>
+        <div class="project-card">
+            <img src="./img/project-card.png" alt="">
+            <div class="content">
+                <h1 class="project-name hide">Проект </h1>
+                <span class="tags"></span>
+            </div>
+        </div>
     </div>
-
-
-
 </section>
+
+<!-- contact -->
+<section class="contact" id="contact-section">
+    <h2 class="heading">Кон<span class="highlight">Так</span>Ты</h2>
+    <p class="sub-heading">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+    <div class="separator"></div>
+
+    <div class="contact-form">
+        <div class="name">
+            <input type="text" class="first-name" required placeholder="Имя">
+            <input type="text" class="last-name" required placeholder="Фамилия">
+        </div>
+        <input type="email" required class="email" placeholder="Эл.почта">
+        <textarea class="message" placeholder="Введите текст..." required></textarea>
+        <button class="btn contact=btn">Отправить</button>
+    </div>
+</section>
+
 
   <script src="app.js"></script>
   <script src="project.js"></script>

@@ -144,7 +144,7 @@ body {
 .about {
     width: 100%;
     height: 100%;
-    padding: 7rem 7rem;
+    padding: 5rem;
 }
 
 .heading {
@@ -241,9 +241,9 @@ body {
 
 /* project section */
 
-.project {
+.project, .contact{
     position: relative;
-    padding: 50px 10vw;
+    padding: 6vw;
 }
 
 .filter{
@@ -305,13 +305,21 @@ body {
     text-align: center;
 }
 
-.project-card:hover .content{
-    opacity: 1;
+.project-container {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
 }
 
+.project-card:hover .content{
+    opacity: 0.5;
+    transition: .5s;
+}
 
-
-
+.project-card:hover .hide {
+    display: none;
+}
 
 
 
