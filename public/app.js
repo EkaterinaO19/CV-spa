@@ -24,3 +24,30 @@ projects.forEach(p => () => {
 </div>
     `;
 })
+
+// contact form
+const contactBtn = document.querySelector('.contact-btn');
+const firstName = document.querySelector('.first-name')
+const lastName = document.querySelector('.last-name')
+const email = document.querySelector('.email')
+const msg = document.querySelector('.message')
+
+contactBtn.addEventListener('cliick', () => {
+    if(firstName.ariaValueMax.length && lastName.ariaValueMax.length && 
+        email.ariaValueMax.length && msg.ariaValueMax.length) {
+            fetch('/mail', {
+                method: 'post',
+                header: new Headers({'Content-Type': "application/json"}),
+                body: JSON.stringify({
+                    firstname: firstName.value,
+                    lasttname: lastName.value,
+                    email: email.value,
+                    msg: msg.value,
+                })
+            }) 
+            .then(res => res.json())
+            .then(data => {
+                alert(data)
+            })
+        }
+})
