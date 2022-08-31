@@ -1,9 +1,9 @@
-# CV app prontend + back (js)
+# CV app frontend + back (js)
 Built With React
 
 ## Screenshots
 
-![App Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
+![App Screenshot](Портфолио.png)
 
 Getting Started
 npm i create-ract-app .
