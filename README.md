@@ -1,12 +1,12 @@
-# folio
-Built With
-React
+# CV app prontend + back (js)
+Built With React
+
+## Screenshots
+
+![App Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
 
 Getting Started
 npm i create-ract-app .
-
-Clone the repo
-git clone https://github.com/your_username_/Project-Name.git
 
 Install NPM packages
 npm install dotenv express.js nodemailer nodemon
